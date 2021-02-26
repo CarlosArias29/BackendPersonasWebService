@@ -1,18 +1,22 @@
-# BackendPersonasWebService
-Requerimientos técnicos mínimos:
+# Backend Personas Web Service (JPA)
+Proyecto ejercicio de la creación de un rest service, haciendo uso de un pool de conexión.
+
+## Requerimientos técnicos mínimos.
 - JDK 8
 - MariaDB
 - Payara Server
 
-# Configuraciones del proyecto.
+## Configuraciones del proyecto.
 
-Este proyecto hace uso de pool de conexiones, por lo que necesita que los siguientes campos esten configurados:
+Este proyecto hace uso de pool de conexiones, por lo que necesita que los siguientes campos esten configurados.
+### Datos principales
+
 ```
 Nombre del pool: PersonaDb
 Resource Type: DataSource
 datasourceName:	org.mariadb.jdbc.MySQLDataSource
 ```
-_Propiedades adicionales:_
+### Propiedades adicionales:
 ```
   URL: jdbc:mariadb://localhost:3306/test?connectTimeout=0
   serverName:	localhost
@@ -22,3 +26,5 @@ _Propiedades adicionales:_
   portNumber:	3306
   useSSL:	false
 ```
+## Autor 
+Ejercicio de un curso de udemy sobre java: [Ir al curso](https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/)
