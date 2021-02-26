@@ -47,8 +47,8 @@ public class PersonaServiceRS {
     @Consumes(value = MediaType.APPLICATION_JSON)
     @Produces(value = MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public Response modificarPersona(@PathParam("{id}") Persona personaModificada){
-        Persona persona = personaDao.encontrarPersona(personaModificada);
+    public Response modificarPersona(@PathParam("id") int id, Persona personaModificada){
+        Persona persona = personaDao.encontrarPersona(new Persona(id));
         if (persona != null) {
             personaDao.actualizarPersona(personaModificada);
             System.out.println("Persona modificada: "+personaModificada);
@@ -57,7 +57,7 @@ public class PersonaServiceRS {
         }
         
         return Response.status(Status.NOT_FOUND).build();
-    }
+    }//*/
     
     @DELETE
     @Produces(value = MediaType.APPLICATION_JSON)
