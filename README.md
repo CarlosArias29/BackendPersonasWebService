@@ -26,5 +26,8 @@ datasourceName:	org.mariadb.jdbc.MySQLDataSource
   portNumber:	3306
   useSSL:	false
 ```
+### Información adicional
+En payara server primero se crea el JDBC Connection Pools y luego se crea el JDBC Resources.
+
 ## Autor 
 Ejercicio de un curso de udemy sobre java: [Ir al curso](https://www.udemy.com/course/universidad-java-especialista-en-java-desde-cero-a-master/)
